@@ -1,0 +1,14 @@
+.home-card-down-num {
+  text-align: center;
+  width: 10%;
+  color: white;
+}
+
+.home-card-down-grade {
+  float: right;
+  text-align: center;
+  width: fit-content;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding-left: 2px;
+}

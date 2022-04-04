@@ -1,0 +1,11 @@
+.assets-flex {
+  display: flex;
+  flex-direction: row;
+}
+.assets-icon {
+  margin-right: 5px;
+}
+
+.assets-text {
+  font-style: italic;
+}

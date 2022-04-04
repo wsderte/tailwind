@@ -1,0 +1,9 @@
+.sections-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  flex-direction: raw;
+  padding: 1vh;
+
+  padding-left: 15%;
+}

@@ -1,0 +1,11 @@
+.home-page-bottom {
+  height: fit-content;
+  background-color: rgba(236, 228, 218, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+  .home-page-bottom {
+    height: 100%;
+    background-color: rgba(212, 147, 67, 0.7);
+  }
+}

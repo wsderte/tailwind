@@ -1,0 +1,30 @@
+.logo {
+  width: 40px;
+  padding: 1px;
+  margin-left: 8vh;
+  display: inline;
+  float: left;
+  margin-top: 10px;
+}
+
+.logo-name {
+  color: black;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.logo_icon {
+  width: 25px;
+  animation-duration: 3s;
+  animation-name: s;
+}
+
+@keyframes s {
+  from {
+    color: red;
+  }
+  to {
+    color: black;
+  }
+}

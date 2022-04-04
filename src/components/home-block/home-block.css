@@ -1,0 +1,28 @@
+.home-block-wrap {
+  float: left;
+  display: block;
+  width: 400px;
+  border: 0px solid black;
+  margin: 2vh;
+  margin-top: 0vh;
+}
+
+.home-block-icon {
+  text-align: center;
+}
+
+.home-block-header {
+  font-size: 38px;
+  font-style: italic;
+
+  margin: 5px;
+  text-align: center;
+}
+
+.home-block-text {
+  padding: 5px;
+  font-style: italic;
+
+  margin-top: 10px;
+  text-align: center;
+}

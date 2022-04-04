@@ -1,0 +1,7 @@
+.footer-text {
+  color: rgb(115, 115, 115);
+  font-size: 13px;
+  width: fit-content;
+  padding-left: 2vh;
+  cursor: pointer;
+}

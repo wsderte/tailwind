@@ -1,0 +1,17 @@
+.social-image-wrap {
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid #2252b8;
+  border-radius: 30px;
+  padding: 5px;
+  margin-left: 1vh;
+  cursor: pointer;
+}
+
+.social-image {
+  color: blue;
+}
+
+.social-image-wrap:hover {
+  transform: scale(1.3);
+}
