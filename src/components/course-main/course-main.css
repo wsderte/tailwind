@@ -47,9 +47,21 @@
   margin-left: 25%;
 }
 
-.home-card-up-tags {
+.course-card-up-tags {
   width: 100%;
+  color: black;
+  position: relative;
+  z-index: 11;
+  float: right;
+  display: flex;
+  height: fit-content;
+  flex-direction: raw;
+  padding: 1vh;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-right: 10px;
 }
+
 
 .course-left-under {
   display: flex;
