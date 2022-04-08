@@ -4,13 +4,13 @@
  
    - sign in/up
  
-   -/path/:courses
+   - /path/:courses
  
-  -useMemo
+  - useMemo
   
-  -useLazy
+  - useLazy
   
-  -useCallback
+  - useCallback
   
   
  [Sauce](https://www.frontendmentor.io/)
