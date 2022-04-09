@@ -6,9 +6,9 @@ import './navbar.css'
 
 export const NavBar = () => {
     const navbarElements = [
-        ['Contacts', '/contacts'],
+        ['Sign In', '/sign'],
         ['About', '/about'],
-        ['Service', '/service'],
+        ['Courses', '/courses'],
         ['Home', '/'],
     ]
 

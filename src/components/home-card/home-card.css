@@ -1,7 +1,8 @@
 .home-card-wrap {
-  width: 45vh;
-  min-width: 45vh;
+  min-width: 40vh;
+  width: 44vh;
   height: 60vh;
+
   margin-right: 10px;
   margin-left: 10px;
   float: left;

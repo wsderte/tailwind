@@ -50,7 +50,7 @@ export const CourseMain = () => {
         },
     ]
 
-    console.log('Test ' + state.header)
+    //  console.log('Test ' + state.header)
 
     return (
         <div className="course-main-wrap">
