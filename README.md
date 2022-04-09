@@ -6,8 +6,6 @@
  
    - sign in/up
  
-   - /path/:courses
- 
   - useMemo
   
   - useLazy
