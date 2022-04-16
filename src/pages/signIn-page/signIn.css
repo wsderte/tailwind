@@ -1,0 +1,24 @@
+.signin-wrap{
+    width: 100%;
+    height:  fit-content;
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.signin-content{
+    margin: 0 25vw;
+    padding: 7vh 1vh;
+    width: 50vw;
+    height: fit-content;
+    background-color: rgb(104, 104, 201); 
+
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+
+}
