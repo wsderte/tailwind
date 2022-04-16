@@ -1,0 +1,12 @@
+.sign-input{
+    width: 60%;
+    background-color: rgb(104, 104, 201);
+
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.margin-bottom{
+    margin-bottom: 2.5vh;
+}
