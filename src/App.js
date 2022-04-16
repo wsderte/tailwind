@@ -5,6 +5,7 @@ import { NavBar } from '../src/components/navbar/navbar'
 import { Provider } from 'react-redux'
 import { store } from './redux/index'
 import { SignUp } from './pages/signUp-page/signUp'
+import { CoursePage } from './pages/courses-page/course-page'
 
 import './App.css'
 
@@ -19,7 +20,7 @@ function App() {
                         element={<CardPage />}
                     ></Route>
                     <Route path="/" element={<HomePage />}></Route>
-                    <Route path="/courses" element={<CardPage />}></Route>
+                    <Route path="/courses" element={<CoursePage />}></Route>
                     <Route path="/sign" element={<SignUp />}></Route>
                 </Routes>
             </Router>
