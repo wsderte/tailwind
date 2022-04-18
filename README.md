@@ -7,17 +7,15 @@
    - sign in/up
        - change ref on sign/up, sign/in
        - Usage of date inputs in sign in/up
- 
-  - useEffect
+       - input side effects on error / sucesses
 
-  - useForm
- 
-  - useMemo
-  
-  - useLazy
-  
-  - useCallback
-  
+   - hooks 
+      - useEffect
+      - useForm
+      - useMemo
+      - useLazy
+      - useCallback
+   
   - header
   
   - coursesPage => infinite scroll 
@@ -26,7 +24,6 @@
 
   - motion
  
-  - input side effects on error / sucesses
  
  
 ![изображение](https://user-images.githubusercontent.com/31801595/162470330-d375d6b9-1b74-4069-96e1-b4734fcd68b8.png)
