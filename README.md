@@ -5,7 +5,8 @@
  ROAD
  
    - sign in/up
-   - change ref on sign/up, sign/in
+    - change ref on sign/up, sign/in
+    - Usage of date inputs in sign in/up
  
   - useEffect
 
