@@ -31,7 +31,6 @@ export const HomeMain = () => {
                     <div className="home-main-picture"></div>
                 </div>
             </div>
-
             <HeaderText text={text[2]} />
         </div>
     )
