@@ -24,7 +24,6 @@
 }
 
 .sign-inputs{
-    direction: column;
     flex-direction: column;
     margin: 10px 10vw;
     align-items: center;

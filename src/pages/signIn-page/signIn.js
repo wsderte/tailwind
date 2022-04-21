@@ -16,8 +16,10 @@ export const SignIn = () => {
         navigate('/sign/up')
     }
 
-    const inputs = ['Email Address', 'Password']
-
+    const inputs = [
+        { text: 'Email Address' },
+        { text: 'Password', type: 'password' },
+    ]
     const styles = {
         github: { background: 'black' },
         twitter: {
@@ -53,6 +55,7 @@ export const SignIn = () => {
                             icon={val.icon}
                             backgroundChange={val?.backgroundChange}
                             styled={val.styled}
+                            key={val.text + val.icon}
                         />
                     ))}
                 </div>
@@ -61,7 +64,11 @@ export const SignIn = () => {
 
                 <div className="sign-inputs  flex-center">
                     {inputs.map((val) => (
-                        <Input placeholder={val} />
+                        <Input
+                            placeholder={val.text}
+                            type={val.type}
+                            key={val.text + val.type}
+                        />
                     ))}
                 </div>
 

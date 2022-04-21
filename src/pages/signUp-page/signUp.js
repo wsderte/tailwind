@@ -6,22 +6,59 @@ import { ChallengeButton } from './../../components/challenge-button/challenge-b
 import { EmailButton } from './../../components/email-button/email-button'
 import { Input } from '../../components/input/input'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { setCurrentUser } from '../../redux/user/reducer'
+import { useDispatch } from 'react-redux'
 
 export const SignUp = () => {
+    const [name, setname] = useState(null)
+    const [email, setemail] = useState(null)
+    const [pass, setpass] = useState(null)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+
+    const updateName = (value) => {
+        setname(value)
+    }
+
+    const updateEmail = (value) => {
+        setemail(value)
+    }
+
+    const updatePass = (value) => {
+        setpass(value)
+    }
 
     const handleClick = () => {
         navigate('/sign/in')
     }
 
-    const inputs = ['Name', 'Email Address', 'Password']
+    const createClick = () => {
+        if (name && email && pass) {
+            console.log('can create account')
+            dispatch(
+                setCurrentUser({
+                    name,
+                    email,
+                    pass,
+                })
+            )
+            navigate('/sign/in')
+        }
+    }
+
+    const inputs = [
+        { text: 'Name', update: updateName },
+        { text: 'Email Address', update: updateEmail },
+        { text: 'Password', type: 'password', update: updatePass },
+    ]
 
     const styles = {
         github: { background: 'black' },
         twitter: {
             background: 'white',
             color: '#1DA1F2',
-            'font-weight': 'bold',
+            fontWeight: 'bold',
         },
         create: { background: 'white', color: 'blue' },
     }
@@ -51,6 +88,7 @@ export const SignUp = () => {
                             icon={val.icon}
                             backgroundChange={val?.backgroundChange}
                             styled={val.styled}
+                            key={val.text + val.icon}
                         />
                     ))}
                 </div>
@@ -59,12 +97,20 @@ export const SignUp = () => {
 
                 <div className="sign-inputs  flex-center">
                     {inputs.map((val) => (
-                        <Input placeholder={val} />
+                        <Input
+                            placeholder={val.text}
+                            type={val.type}
+                            update={val.update}
+                            key={val.text + val.type}
+                        />
                     ))}
                 </div>
 
                 <div className="flex-center ">
-                    <EmailButton name={'create account'} />
+                    <EmailButton
+                        name={'create account'}
+                        onClick={createClick}
+                    />
                 </div>
 
                 <div className="sign-text-box flex-center">
