@@ -8,6 +8,7 @@
        - change ref on sign/up, sign/in
        - Usage of date inputs in sign in/up
        - input side effects on error / sucesses
+       - Axios or fetch on server
 
    - hooks 
       - useEffect
