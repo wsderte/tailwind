@@ -1,0 +1,10 @@
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  flex-direction: raw;
+}
+
+.home-card-down-space {
+  margin-left: 10px;
+}

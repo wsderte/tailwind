@@ -1,0 +1,25 @@
+.box {
+  margin-right: 8vh;
+  margin-top: 20px;
+  width: 8%;
+  height: 20px;
+
+  display: inline;
+  float: right;
+
+  border-radius: 3rem;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.text {
+  font-style: italic;
+}
+
+.box:hover {
+  color: rgb(48, 80, 128);
+  font-weight: 900;
+  letter-spacing: 3px;
+  border-radius: 3rem;
+}

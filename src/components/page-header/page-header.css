@@ -1,0 +1,25 @@
+.page-header-wrap {
+  width: 100%;
+  border-bottom: 1px solid black;
+  background: #ece4dab3 none repeat scroll 0% 0%;
+  position: sticky;
+  top: 0px;
+  z-index: 80;
+}
+
+.page-header-box {
+  margin: 0 5%;
+}
+
+.page-header-text {
+  color: #000000;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  width: fit-content;
+  padding: 8px 32px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

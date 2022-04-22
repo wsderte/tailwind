@@ -1,0 +1,26 @@
+.sign-input{
+    width: 90%;
+    background-color: rgb(104, 104, 201);
+
+    border: none;
+    border-bottom: 1px solid white;
+
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+.sign-input-box{
+    width: 50%;
+    position: relative;
+}
+
+.password-picture{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.margin-bottom{
+    margin-bottom: 2.5vh;
+}

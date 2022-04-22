@@ -1,0 +1,97 @@
+.home-main-wrap {
+  padding: 4rem 0px 5rem;
+}
+
+.home-main-container {
+  display: flex;
+  -moz-box-align: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 80%;
+}
+
+.home-main-right {
+  flex: 1;
+}
+
+.home-main-picture {
+  height: 480px;
+  width: 560px;
+
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/cb82e5127535335.621bc733e85d0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border: 1px solid white;
+  border-radius: 0rem;
+  margin-left: 22%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  display: block;
+}
+
+.home-main-left {
+  flex: 1;
+  position: relative;
+  font: inherit;
+}
+
+.home-main-big-text {
+  font-size: 56px;
+  font-weight: 600;
+  color: rgb(62, 84, 163);
+  margin-bottom: 6vh;
+  font-style: italic;
+
+  margin-left: 3vh;
+}
+
+.home-main-text {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 6vh;
+  font-style: italic;
+
+  margin-left: 3vh;
+}
+
+.home-main-button {
+  align-content: center;
+}
+
+.home-main-box {
+  width: 40%;
+  height: 5.5vh;
+
+  margin-left: 4vh;
+
+  border: 2px solid black;
+  border-radius: 3rem;
+  background-color: black;
+  cursor: pointer;
+}
+
+.home-main-button-text {
+  padding-top: 1vh;
+  font-size: 24px;
+  color: rgba(236, 228, 218);
+}
+
+.home-main-box:hover {
+  border: 2px solid rgb(224, 35, 35);
+  background-color: rgb(224, 35, 35);
+  transform: scale(1.15);
+}
+
+.home-main-text-heading {
+  margin-top: 5%;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
