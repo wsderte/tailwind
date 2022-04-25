@@ -24,6 +24,7 @@
   - dark mode
 
   - motion
+  - Jest tests for REDUX REACT (optional EXPRESS)
  
  
  - about page
