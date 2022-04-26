@@ -22,7 +22,7 @@
   
   - dark mode
 
-  + [motion](https://www.youtube.com/watch?v=FdrEjwymzdY)
+[motion](https://www.youtube.com/watch?v=FdrEjwymzdY)  ++
   - Jest tests for REDUX REACT (optional EXPRESS)
  
  
