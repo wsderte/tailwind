@@ -27,7 +27,7 @@
  
  - about page
      - [swiper](https://swiperjs.com/react) [example](https://codesandbox.io/s/pehyce?file=/src/App.jsx)
-     - [toggle](https://aaronshaf.github.io/react-toggle/)
+     - [toggle](https://aaronshaf.github.io/react-toggle/) [ex](https://freefrontend.com/css-toggle-switches/)
      - 
 ![изображение](https://user-images.githubusercontent.com/31801595/162470330-d375d6b9-1b74-4069-96e1-b4734fcd68b8.png)
 
