@@ -10,7 +10,6 @@
        - Axios or fetch on server
 
    - hooks 
-      - useEffect
       - useForm
       - useMemo
       - useLazy
