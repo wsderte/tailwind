@@ -1,20 +1,27 @@
 import './App.css'
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { HomePage } from './pages/home-page/home-page'
-import { CardPage } from './pages/card-page/card-page'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { NavBar } from '../src/components/navbar/navbar'
 import { Provider } from 'react-redux'
 import { store } from './redux/index'
-import { SignUp } from './pages/signUp-page/signUp'
-import { CoursePage } from './pages/courses-page/course-page'
-import { SignIn } from './pages/signIn-page/signIn'
+import { AnimatedNav } from './components/animated-navigation/animated-nav'
 
 function App() {
+    //<AnimatedNav />
     return (
         <Provider store={store}>
             <Router>
                 <NavBar />
+                <AnimatedNav />
+            </Router>
+        </Provider>
+    )
+}
+
+export default App
+
+/*
+ 
                 <Routes>
                     <Route
                         path="/course/:header"
@@ -25,9 +32,5 @@ function App() {
                     <Route path="/sign/up" element={<SignUp />}></Route>
                     <Route path="/sign/in" element={<SignIn />}></Route>
                 </Routes>
-            </Router>
-        </Provider>
-    )
-}
 
-export default App
+*/

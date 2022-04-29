@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react'
+import { motion } from 'framer-motion'
+
 import './course-page.css'
 
 const users = [
@@ -22,7 +24,11 @@ export const CoursePage = () => {
     }
 
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}
+        >
             <input type="text" ref={inputRef} />
             <button type="button" onClick={onClick}>
                 Search
@@ -30,6 +36,6 @@ export const CoursePage = () => {
             {state.map((user) => (
                 <div key={user.id + user.name}>{user.name}</div>
             ))}
-        </div>
+        </motion.div>
     )
 }

@@ -1,15 +1,15 @@
 .sign-wrap{
     width: 100%;
-    height:  fit-content;
+    height: 100%;
     text-align: center;
-    padding-top: 8vh;
+    padding-top: 6vh;
 }
 
 .sign-content{
     margin: 0 25vw;
     padding: 7vh 1vh;
     width: 50vw;
-    height: fit-content;
+    height: 65vh;
     background-color: rgb(104, 104, 201); 
 
     text-align: center;
