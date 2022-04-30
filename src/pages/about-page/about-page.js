@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './about-page.css'
 
+import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { AboutFirstSlide } from '../../components/about-firstslide/about-firstslide'
+
 export const AboutPage = () => {
+    const swiperRef = useRef(null)
+
     return (
-        <div className="about-page-wrap">
-            <div className="about-page-container">
-                <div className="about-page-square">
-                    <div className="about-page-bar"></div>
-                    <div className="about-page-main">
-                        <header>About</header>
-                        <div className="about-page-notation"></div>
-                        <div className="about-page-question"></div>
-                        <div className="about-page-answer"></div>
-                    </div>
-                    <div className="about-page-next"></div>
-                </div>
-            </div>
-        </div>
+        <Swiper ref={swiperRef}>
+            <SwiperSlide>
+                <AboutFirstSlide
+                    prev={() => swiperRef.current.swiper.slidePrev()}
+                    next={() => swiperRef.current.swiper.slideNext()}
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <AboutFirstSlide
+                    prev={() => swiperRef.current.swiper.slidePrev()}
+                    next={() => swiperRef.current.swiper.slideNext()}
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <AboutFirstSlide
+                    prev={() => swiperRef.current.swiper.slidePrev()}
+                    next={() => swiperRef.current.swiper.slideNext()}
+                />
+            </SwiperSlide>
+        </Swiper>
     )
 }

@@ -1,0 +1,76 @@
+.about-page-container{
+    padding:  5% 20% 0% 20%;
+    font-style: italic;
+}
+
+.about-page-square{
+    width: 60vw;
+    height: 70vh;
+    background: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.about-page-header{
+    font-size: 56px;
+    font-weight: 700;
+    padding: 2%;
+}
+
+.about-page-notation{
+    padding: 2% 25%;
+}
+
+.about-page-buttons{
+    display: flex;
+    padding: 10vh 10vw;
+}
+
+.about-page-left{
+    width: 50%;
+    text-align: left;
+}
+
+.about-previous-button{
+    transform: rotate(180deg);
+}
+
+.about-page-right{
+    width: 50%;
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.about-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background: #fcfdff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 26px;
+    color: #666;
+    text-decoration: none;
+}
+
+.about-button:hover{
+  background: radial-gradient(circle,  #0ff 0%, #e0e5ec 60%);
+  color: rgba(102,102,102,.5); 
+  animation: colorchange 3s linear infinite;
+}
+
+@keyframes colorchange {
+      to {filter: hue-rotate(360deg);}
+}
