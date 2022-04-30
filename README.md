@@ -20,6 +20,8 @@
   - coursesPage => infinite scroll 
   
   - dark mode
+  
+  - main page -> [social media icons change](https://codepen.io/abdelrhmansaid/pen/OJRNOpQ)
 
 [motion](https://www.youtube.com/watch?v=FdrEjwymzdY)  ++
   - Jest tests for REDUX REACT (optional EXPRESS)
