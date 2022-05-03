@@ -15,6 +15,8 @@
       - useLazy
       - useCallback
    
+  - download files on course page
+   
   - header
   
   - coursesPage => infinite scroll 
