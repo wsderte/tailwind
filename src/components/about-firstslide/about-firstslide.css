@@ -16,7 +16,7 @@
 .about-page-header{
     font-size: 56px;
     font-weight: 700;
-    padding: 2%;
+    padding: 3vh 0;
 }
 
 .about-page-notation{
@@ -25,7 +25,7 @@
 
 .about-page-buttons{
     display: flex;
-    padding: 10vh 10vw;
+    padding: 5vh 10vw;
 }
 
 .about-page-left{
@@ -46,6 +46,9 @@
     text-align: center;
 }
 
+.about-page-bar{
+    margin-top: 3.5vh;
+}
 
 .about-button{
     height: 50px;

@@ -2,8 +2,9 @@ import React from 'react'
 import './about-firstslide.css'
 import { AiFillForward } from 'react-icons/ai'
 import { AboutQuestions } from './../about-questions/about-questions'
+import { ProgressBar } from '../progress-bar/progress-bar'
 
-export const AboutFirstSlide = ({ prev, next }) => {
+export const AboutFirstSlide = ({ prev, next, slide }) => {
     const questions = [
         'Do you have a website already?',
         'Do you have a budjet allocated?',
@@ -13,7 +14,12 @@ export const AboutFirstSlide = ({ prev, next }) => {
         <div className="about-page-wrap">
             <div className="about-page-container">
                 <div className="about-page-square">
-                    <div className="about-page-bar"></div>
+                    <div className="about-page-bar">
+                        <ProgressBar
+                            count={slide.count}
+                            maxCount={slide.maxCount}
+                        />
+                    </div>
                     <div className="about-page-main">
                         <div className="about-page-header text-center">
                             {'Overview'}

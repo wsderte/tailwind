@@ -7,27 +7,23 @@ import { AboutFirstSlide } from '../../components/about-firstslide/about-firstsl
 
 export const AboutPage = () => {
     const swiperRef = useRef(null)
+    const slides = [
+        { count: 1, maxCount: 3 },
+        { count: 2, maxCount: 3 },
+        { count: 3, maxCount: 3 },
+    ]
 
     return (
         <Swiper ref={swiperRef}>
-            <SwiperSlide>
-                <AboutFirstSlide
-                    prev={() => swiperRef.current.swiper.slidePrev()}
-                    next={() => swiperRef.current.swiper.slideNext()}
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <AboutFirstSlide
-                    prev={() => swiperRef.current.swiper.slidePrev()}
-                    next={() => swiperRef.current.swiper.slideNext()}
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <AboutFirstSlide
-                    prev={() => swiperRef.current.swiper.slidePrev()}
-                    next={() => swiperRef.current.swiper.slideNext()}
-                />
-            </SwiperSlide>
+            {slides.map((slide) => (
+                <SwiperSlide>
+                    <AboutFirstSlide
+                        prev={() => swiperRef.current.swiper.slidePrev()}
+                        next={() => swiperRef.current.swiper.slideNext()}
+                        slide={slide}
+                    />
+                </SwiperSlide>
+            ))}
         </Swiper>
     )
 }
