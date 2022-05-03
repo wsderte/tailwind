@@ -19,7 +19,9 @@
    
   - header
   
-  - coursesPage => infinite scroll 
+  - coursesPage 
+     - filters 
+     - infinite scroll 
   
   - dark mode
   
