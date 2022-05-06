@@ -14,6 +14,7 @@
       - useMemo
       - useLazy
       - useCallback
+      - useLazy
    
   - download files on course page
    
