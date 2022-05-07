@@ -15,7 +15,7 @@
   margin-left: 20%;
   margin-right: 2%;
   padding: 8px;
-  
+  outline: 0;
 }
 
 input::-webkit-input-placeholder{

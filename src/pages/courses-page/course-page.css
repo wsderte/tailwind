@@ -1,0 +1,17 @@
+.course-page-wrap{
+    margin: 0 4%;
+}
+
+.course-page-filter{
+    text-align: center;
+    margin: 1vh 0;
+}
+
+.course-page-input{
+  border: 0;
+  border-bottom: 2px solid black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  outline: 0;
+}
