@@ -1,6 +1,7 @@
 import React from 'react'
 import './course-main.css'
 
+import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { BsFillBookmarkStarFill } from 'react-icons/bs'
 import { Stack } from '../home-stack/home-stack'
@@ -12,6 +13,7 @@ import { BsCheckLg } from 'react-icons/bs'
 import { GiIronCross } from 'react-icons/gi'
 
 export const CourseMain = () => {
+    const { header } = useParams()
     const state = useSelector((state) => state.course.currentCourse)
     if (!state) return null
 
@@ -88,7 +90,7 @@ export const CourseMain = () => {
                         {state.stack.map((val) => (
                             <Stack stack={val} key={val + state.id} />
                         ))}
-                        <div className="course-left-under course-fix2">
+                        <div className="course-left-under course-fix2 course-level-pos">
                             <HomeCardLevel
                                 num={state.level[0]}
                                 grade={state.level[1]}
@@ -97,9 +99,7 @@ export const CourseMain = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="home-card-down-header">
-                            {state.header}
-                        </div>
+                        <div className="home-card-down-header">{header}</div>
                         <div className="home-card-down-text">{state.text}</div>
                     </div>
                     <div className="course-right-box">

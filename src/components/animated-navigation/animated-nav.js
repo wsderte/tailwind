@@ -7,6 +7,7 @@ import { CoursePage } from './../../pages/courses-page/course-page'
 import { SignIn } from './../../pages/signIn-page/signIn'
 import { AnimatePresence } from 'framer-motion'
 import { AboutPage } from '../../pages/about-page/about-page'
+import { NotFound } from '../../pages/not-found/not-found'
 
 export const AnimatedNav = () => {
     const location = useLocation()
@@ -19,6 +20,7 @@ export const AnimatedNav = () => {
                 <Route path="/about" element={<AboutPage />}></Route>
                 <Route path="/sign/up" element={<SignUp />}></Route>
                 <Route path="/sign/in" element={<SignIn />}></Route>
+                <Route path="*" element={<NotFound />}></Route>
             </Routes>
         </AnimatePresence>
     )

@@ -68,6 +68,11 @@
   flex-direction: row;
 }
 
+.course-level-pos{
+  position: absolute;
+  right: 20px;
+}
+
 .course-main-right {
   width: 45%;
   display: flex;
