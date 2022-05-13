@@ -23,7 +23,7 @@
   - header
   
   - coursesPage 
-     - filters 
+     - [filters](https://codepen.io/lucasyem/pen/ZEEYKdj)
      - infinite scroll 
   
   - dark mode
