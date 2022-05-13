@@ -23,8 +23,8 @@
   - header
   
   - coursesPage 
-     - [filters](https://codepen.io/lucasyem/pen/ZEEYKdj)
-     - infinite scroll 
+     - [filters](https://codepen.io/lucasyem/pen/ZEEYKdj) TODO better
+     - infinite scroll  +
   
   - dark mode
   
