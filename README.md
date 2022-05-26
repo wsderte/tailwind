@@ -21,6 +21,8 @@
   - download files on course page
    
   - header
+  - docker
+  - tocken
   
   - coursesPage 
      - [filters](https://codepen.io/lucasyem/pen/ZEEYKdj) TODO better
