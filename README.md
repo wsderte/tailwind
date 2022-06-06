@@ -36,6 +36,8 @@
   - Jest tests for REDUX REACT (optional EXPRESS)
  
  
+ - [ CI / CD ](https://www.youtube.com/watch?v=ANj7qUgzNq4)  - github actions
+ 
  - about page
      - [swiper](https://swiperjs.com/react) [example](https://codesandbox.io/s/pehyce?file=/src/App.jsx) +
      - [toggle](https://aaronshaf.github.io/react-toggle/) [ex](https://freefrontend.com/css-toggle-switches/) +
