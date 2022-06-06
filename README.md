@@ -43,7 +43,9 @@
      - [toggle](https://aaronshaf.github.io/react-toggle/) [ex](https://freefrontend.com/css-toggle-switches/) +
      - [progressbar](https://codepen.io/juanigallo/pen/WNbZgmV) [ex](https://freefrontend.com/react-progress-bars/) +
      - set parameters, create object with info
-     - 
+
+- hosting site  -  [netlify](https://www.netlify.com/)
+
 ![изображение](https://user-images.githubusercontent.com/31801595/162470330-d375d6b9-1b74-4069-96e1-b4734fcd68b8.png)
 
 https://dribbble.com/shots/4031090-Login-Signup-Form/attachments/10158631?mode=media
