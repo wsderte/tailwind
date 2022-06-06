@@ -37,6 +37,7 @@
  
  
  - [ CI / CD ](https://www.youtube.com/watch?v=ANj7qUgzNq4)  - github actions
+ - gmail sending
  
  - about page
      - [swiper](https://swiperjs.com/react) [example](https://codesandbox.io/s/pehyce?file=/src/App.jsx) +
