@@ -4,6 +4,8 @@
 
  ROAD
  
+  - fix card  width!!!!
+ 
    - sign in/up
        - Usage of date inputs in sign in/up ( as server connection )
        - input side effects on error / sucesses +
