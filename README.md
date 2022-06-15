@@ -32,6 +32,7 @@
      - infinite scroll  +
   
   - dark mode
+     - cool color -   #20262E
   
   - main page -> [social media icons change](https://codepen.io/abdelrhmansaid/pen/OJRNOpQ)
 
@@ -52,6 +53,8 @@
 - not found page
     - css
     - background
+
+
 
 - hosting site  -  [netlify](https://www.netlify.com/)
 
