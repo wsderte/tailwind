@@ -6,8 +6,9 @@
  
    - sign in/up
        - Usage of date inputs in sign in/up ( as server connection )
-       - input side effects on error / sucesses
-       - Axios or fetch on server
+       - input side effects on error / sucesses +
+       - Axios or fetch on server 
+       - github/twitter auth
 
    - hooks 
       - useForm
@@ -18,7 +19,7 @@
       - useId  !!!!!!!!!!!!!!!!!!!!!!!!!
       - useDefferedValue
    
-  - download files on course page
+  - download files on course (personal) page
    
   - header
   - docker
