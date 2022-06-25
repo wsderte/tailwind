@@ -20,6 +20,7 @@
       - useLazy
       - useId  !!!!!!!!!!!!!!!!!!!!!!!!!
       - useDefferedValue
+      - useDebugValue
    
   - download files on course (personal) page
    
