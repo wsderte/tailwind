@@ -55,7 +55,8 @@
     - css
     - background
 
-
+-adapting
+    - @media
 
 - hosting site  -  [netlify](https://www.netlify.com/)
 
