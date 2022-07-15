@@ -1,7 +1,7 @@
 import React from 'react'
 import './challenge-button.css'
 
-export const ChallengeButton = ({ text, icon, styled }) => {
+export const ChallengeButton = React.memo(({ text, icon, styled }) => {
     //  { background: backgroundChange ? backgroundChange : 'red',}
     return (
         <div className="challenge-but-wrap" style={styled}>
@@ -13,4 +13,4 @@ export const ChallengeButton = ({ text, icon, styled }) => {
             </div>
         </div>
     )
-}
+})

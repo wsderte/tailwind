@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import './course-page.css'
@@ -77,8 +77,12 @@ export const CoursePage = () => {
     const [cards, setcards] = useState(data)
     const inputRef = useRef('')
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const onClick = () => {
-        // TODO fix filter on null case +-
+        // TODO fix filter on null case +-, fix adding cards while filter value exist
         if (inputRef.current.value) {
             setcards(
                 cards.filter((val) =>
@@ -109,7 +113,12 @@ export const CoursePage = () => {
                     Search
                 </button>
             </div>
-            <InfiniteScroller cards={cards} setcards={setcards} data={data} />
+            <InfiniteScroller
+                cards={cards}
+                setcards={setcards}
+                data={data}
+                value={inputRef.current.value}
+            />
         </motion.div>
     )
 }

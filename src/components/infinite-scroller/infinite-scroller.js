@@ -2,10 +2,18 @@ import React, { useEffect, useState } from 'react'
 import './infinite-scroller.css'
 import { HomeCard } from '../home-card/home-card'
 
-export const InfiniteScroller = ({ cards, setcards, data }) => {
-    const loadMoreCard = (e) => {
+export const InfiniteScroller = ({ cards, setcards, data, value }) => {
+    let Data = value
+        ? data.filter((val) =>
+              val.header.toLowerCase().includes(value.toLowerCase())
+          )
+        : data
+    console.log(Data)
+
+    const loadMoreCard = () => {
         // TODO  axios instead this immitation
-        setcards((oldcards) => [...oldcards, ...data])
+        console.log(Data)
+        setcards((oldcards) => [...oldcards, ...Data])
     }
 
     const handleScroll = (e) => {

@@ -1,8 +1,15 @@
 import React from 'react'
 import './home-courses.css'
 import { HomeCard } from '../home-card/home-card'
+import { useNavigate } from 'react-router-dom'
 
 export const HomeCourses = () => {
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate('/courses')
+    }
+
     const cards = [
         {
             id: 0,
@@ -84,7 +91,10 @@ export const HomeCourses = () => {
                     ))}
                 </div>
             </div>
-            <div className="home-courses-view-all home-course-text-spec underline">
+            <div
+                className="home-courses-view-all home-course-text-spec underline"
+                onClick={handleClick}
+            >
                 View all Challenges
             </div>
         </div>

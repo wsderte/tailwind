@@ -1,10 +1,10 @@
 .home-card-wrap {
-  min-width: 40vh;
-  width: 44vh;
+  min-width: 15vw;
+  width: 20vw;
   height: 60vh;
 
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 2vw;
+  /* margin-left: 10px; */
   float: left;
 }
 
@@ -116,6 +116,7 @@
   flex-direction: raw;
   padding: 1vh;
   width: 100%;
+  
 }
 
 .home-card-down-stack {
@@ -133,7 +134,7 @@
 }
 
 .home-card-down-text {
-  padding: 20px;
+  padding: 1vw;
   font-size: 18px;
   text-align: left;
   color: rgb(115, 115, 115);

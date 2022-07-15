@@ -4,12 +4,13 @@ import './input.css'
 import { SiKeepassxc } from 'react-icons/si'
 import { checkLogInputError } from '../../functions/checkLogInputError'
 
-export const Input = ({ placeholder, type, update }) => {
+export const Input = React.memo(({ placeholder, type, update }) => {
     const [show, setshow] = useState(type)
     const [value, setvalue] = useState('')
     const [error, seterror] = useState(false)
 
     const onChange = (e) => {
+        e.preventDefault()
         setvalue(e.target.value)
         seterror(checkLogInputError(e.target.value, placeholder))
         if (!checkLogInputError(e.target.value, placeholder)) {
@@ -38,4 +39,4 @@ export const Input = ({ placeholder, type, update }) => {
             {error ? error : null}
         </div>
     )
-}
+})

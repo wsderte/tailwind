@@ -3,7 +3,7 @@ import { HeaderText } from './../../components/header-text/header-text'
 import { ChallengeButton } from './../../components/challenge-button/challenge-button'
 import { EmailButton } from './../../components/email-button/email-button'
 import { Input } from '../../components/input/input'
-import { useState } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { setCurrentUser } from '../../redux/user/reducer'
 import { useDispatch } from 'react-redux'
@@ -17,25 +17,25 @@ export const SignUp = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const updateName = (value) => {
+    const updateName = useCallback((value) => {
         setname(value)
-    }
+    }, [])
 
-    const updateEmail = (value) => {
+    const updateEmail = useCallback((value) => {
         setemail(value)
-    }
+    }, [])
 
-    const updatePass = (value) => {
+    const updatePass = useCallback((value) => {
         setpass(value)
-    }
+    }, [])
 
     const handleClick = () => {
         navigate('/sign/in')
     }
 
-    const createClick = () => {
+    const createClick = useCallback(() => {
         if (name && email && pass) {
-            console.log('can create account')
+            //  console.log('can create account')
             // TODO Axios fetch
             dispatch(
                 setCurrentUser({
@@ -46,36 +46,45 @@ export const SignUp = () => {
             )
             navigate('/sign/in')
         }
-    }
+    }, [name, email, pass, dispatch, navigate])
 
-    const inputs = [
-        { text: 'Name', update: updateName },
-        { text: 'Email Address', update: updateEmail },
-        { text: 'Password', type: 'password', update: updatePass },
-    ]
+    const styles = useMemo(
+        () => ({
+            github: { background: 'black' },
+            twitter: {
+                background: 'white',
+                color: '#1DA1F2',
+                fontWeight: 'bold',
+            },
+            create: { background: 'white', color: 'blue' },
+        }),
+        []
+    )
 
-    const styles = {
-        github: { background: 'black' },
-        twitter: {
-            background: 'white',
-            color: '#1DA1F2',
-            fontWeight: 'bold',
-        },
-        create: { background: 'white', color: 'blue' },
-    }
+    const loginButtons = useMemo(
+        () => [
+            {
+                text: 'Sign in with github',
+                icon: <BsGithub size={15} />,
+                styled: styles.github,
+            },
+            {
+                text: 'Sign in with twitter',
+                icon: <FiTwitter size={15} />,
+                styled: styles.twitter,
+            },
+        ],
+        [styles.github, styles.twitter]
+    )
 
-    const loginButtons = [
-        {
-            text: 'Sign in with github',
-            icon: <BsGithub size={15} />,
-            styled: styles.github,
-        },
-        {
-            text: 'Sign in with twitter',
-            icon: <FiTwitter size={15} />,
-            styled: styles.twitter,
-        },
-    ]
+    const inputs = useMemo(
+        () => [
+            { text: 'Name', update: updateName },
+            { text: 'Email Address', update: updateEmail },
+            { text: 'Password', type: 'password', update: updatePass },
+        ],
+        [updateName, updateEmail, updatePass]
+    )
 
     return (
         <div className="sign-wrap">

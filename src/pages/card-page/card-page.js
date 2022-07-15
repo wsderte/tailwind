@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './card-page.css'
 
 import { Faqs } from '../../components/FAQs/faqs'
@@ -12,6 +12,10 @@ import { PageHeader } from '../../components/page-header/page-header'
 import { motion } from 'framer-motion'
 
 export const CardPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}

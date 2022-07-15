@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback, useMemo } from 'react'
 import './signIn.css'
 
 import { ChallengeButton } from '../../components/challenge-button/challenge-button'
@@ -18,20 +18,23 @@ export const SignIn = () => {
     const navigate = useNavigate()
     const user = useSelector((state) => state.user.currentUser)
 
-    const updateEmail = (value) => {
+    const updateEmail = useCallback((value) => {
         setemail(value)
-    }
+        //   console.log('UPDATE EMA')
+    }, [])
 
-    const updatePass = (value) => {
+    const updatePass = useCallback((value) => {
         setpass(value)
-    }
+        //   console.log('UPDATE PASS', value)
+    }, [])
 
     const handleClick = () => {
         navigate('/sign/up')
     }
 
-    const signClick = () => {
+    const signClick = useCallback(() => {
         if (email && pass) {
+            //   console.log(email, pass)
             //console.log(user)
             //  dispatch(setAuthorizedStatus(true))
             // console.log(authorizedStatus)
@@ -41,35 +44,44 @@ export const SignIn = () => {
                 navigate('/')
             }
         }
-    }
+    }, [email, pass, dispatch, navigate, user.email, user.pass])
 
-    const inputs = [
-        { text: 'Email Address', update: updateEmail },
-        { text: 'Password', type: 'password', update: updatePass },
-    ]
+    const styles = useMemo(
+        () => ({
+            github: { background: 'black' },
+            twitter: {
+                background: 'white',
+                color: '#1DA1F2',
+                fontWeight: 'bold',
+            },
+            create: { background: 'white', color: 'blue' },
+        }),
+        []
+    )
 
-    const styles = {
-        github: { background: 'black' },
-        twitter: {
-            background: 'white',
-            color: '#1DA1F2',
-            fontWeight: 'bold',
-        },
-        create: { background: 'white', color: 'blue' },
-    }
+    const loginButtons = useMemo(
+        () => [
+            {
+                text: 'Sign in with github',
+                icon: <BsGithub size={15} />,
+                styled: styles.github,
+            },
+            {
+                text: 'Sign in with twitter',
+                icon: <FiTwitter size={15} />,
+                styled: styles.twitter,
+            },
+        ],
+        [styles.twitter, styles.github]
+    )
 
-    const loginButtons = [
-        {
-            text: 'Sign in with github',
-            icon: <BsGithub size={15} />,
-            styled: styles.github,
-        },
-        {
-            text: 'Sign in with twitter',
-            icon: <FiTwitter size={15} />,
-            styled: styles.twitter,
-        },
-    ]
+    const inputs = useMemo(
+        () => [
+            { text: 'Email Address', update: updateEmail },
+            { text: 'Password', type: 'password', update: updatePass },
+        ],
+        [updateEmail, updatePass]
+    )
 
     return (
         <div className="signin-wrap">
