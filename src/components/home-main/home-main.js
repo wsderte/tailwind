@@ -4,13 +4,13 @@ import './home-main.css'
 import { BsGithub } from 'react-icons/bs'
 import { HeaderText } from '../header-text/header-text'
 
-export const HomeMain = () => {
-    const text = [
-        'Improve your front-end coding skills by building real projects',
-        'Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs. Join 329 541 developers building projects, reviewing code, and helping each other get better.',
-        'How it works',
-    ]
+const text = [
+    'Improve your front-end coding skills by building real projects',
+    'Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs. Join 329 541 developers building projects, reviewing code, and helping each other get better.',
+    'How it works',
+]
 
+export const HomeMain = () => {
     return (
         <div className="home-main-wrap">
             <div className="home-main-container">

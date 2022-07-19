@@ -3,14 +3,17 @@
   width: fit-content;
   border-radius: 32px;
   margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  min-width: 160px;
   cursor: pointer;
-  margin-left: 2vw;
 }
 
 .challenge-but-text {
   padding: 16px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   color: white;
   letter-spacing: 3px;
   font-size: 16px;
@@ -20,4 +23,24 @@
 
 .challenge-but-wrap:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1370px) {
+  .challenge-but-text {
+    font-size: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 960px) {
+  .challenge-but-text {
+    font-size: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1.1px;
+    font-weight: 900;
+  }
 }

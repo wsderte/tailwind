@@ -1,7 +1,7 @@
 .box {
   margin-right: 8vh;
   margin-top: 20px;
-  width: 8%;
+  width: 9%;
   height: 20px;
 
   display: inline;
@@ -19,7 +19,14 @@
 
 .box:hover {
   color: rgb(48, 80, 128);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 3px;
   border-radius: 3rem;
 }
+
+@media (max-width: 930px) {
+  .text {
+      font-size: 1.8vmin;
+  }
+} 
+

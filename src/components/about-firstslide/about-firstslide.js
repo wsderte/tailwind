@@ -4,12 +4,12 @@ import { AiFillForward } from 'react-icons/ai'
 import { AboutQuestions } from './../about-questions/about-questions'
 import { ProgressBar } from '../progress-bar/progress-bar'
 
-export const AboutFirstSlide = ({ prev, next, slide }) => {
-    const questions = [
-        'Do you have a website already?',
-        'Do you have a budjet allocated?',
-    ]
+const questions = [
+    'Do you have a website already?',
+    'Do you have a budjet allocated?',
+]
 
+export const AboutFirstSlide = ({ prev, next, slide }) => {
     return (
         <div className="about-page-wrap">
             <div className="about-page-container">

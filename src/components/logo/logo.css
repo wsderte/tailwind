@@ -5,6 +5,7 @@
   display: inline;
   float: left;
   margin-top: 10px;
+  
 }
 
 .logo-name {
@@ -12,19 +13,27 @@
   position: absolute;
   font-size: 20px;
   font-style: italic;
+  
 }
 
 .logo_icon {
   width: 25px;
   animation-duration: 3s;
-  animation-name: s;
+  animation-name: colorChange;
+
 }
 
-@keyframes s {
+@keyframes colorChange {
   from {
-    color: red;
+    color: rgb(60, 238, 107);
   }
   to {
     color: black;
   }
 }
+
+@media (max-width: 930px) {
+  .logo-name {
+      font-size: 2.5vmin;
+  }
+} 

@@ -85,7 +85,7 @@ export const HomeCourses = () => {
                 <div className="home-courses-text home-course-text-spec">
                     Latest Challenges
                 </div>
-                <div>
+                <div className="home-courses-cards">
                     {cards.map((val) => (
                         <HomeCard props={val} key={val.header + val.id} />
                     ))}

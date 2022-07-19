@@ -2,6 +2,7 @@
   padding-top: 10vh;
   padding-left: 5.5%;
   padding-right: 5.5%;
+  
   margin-top: 2vh;
   margin-left: 10%;
   margin-right: 10%;
@@ -11,6 +12,7 @@
     transparent 25rem
   );
   height: 1200px;
+  min-width: 300px;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -19,7 +21,9 @@
   text-transform: uppercase;
   font-size: 24px;
   margin-bottom: 6vh;
+  min-width: 312px;
 }
+
 .home-course-text-spec {
   letter-spacing: 5px;
   text-align: center;
@@ -29,11 +33,12 @@
   font-size: 16px;
   /*
   text-decoration: underline royalblue;*/
-
+  min-width: 237px;
   padding-top: 40px;
   width: 13%;
   padding-bottom: 3px;
   margin-left: 43.5%;
+
   cursor: pointer;
 }
 
@@ -68,3 +73,24 @@
   transform-origin: bottom left;
 }
 */
+
+@media (max-width:850px){
+  .home-courses-cards{
+    justify-content: space-evenly;
+
+  }
+    
+}
+
+@media (max-width: 768px) {
+  .home-courses-view-all {
+    font-size: 14px;
+    /*
+    text-decoration: underline royalblue;*/
+    min-width: 220px;
+    padding-top: 30px;
+    margin-left: calc((100% - 220px) / 2);
+  
+    cursor: pointer;
+  }
+}

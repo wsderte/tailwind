@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: raw;
   padding: 1vh;
+  justify-content:center;
 }
 
 .email-box-input {
@@ -11,8 +12,6 @@
   border: 1px solid;
   font-size: 24px;
   width: max(35%, 500px);
-
-  margin-left: 20%;
   margin-right: 2%;
   padding: 8px;
   outline: 0;
@@ -45,4 +44,32 @@ input::-webkit-input-placeholder{
 .email-box-button:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 0.5rem;
   transform: scale(1.15);
+}
+
+
+
+@media (max-width: 1360px) {
+  .email-box-input {
+    font-size: 18px;
+    width: 300px;
+
+    margin-right: 1%;
+    padding: 5px;
+  }
+
+  .email-box {
+   margin-top: 2vh;
+
+  }
+
+}
+
+@media(max-width:800px){
+  .email-box-input {
+    font-size: 14px;
+    width: 250px;
+
+    margin-right: 1%;
+    padding: 0px;
+  }
 }

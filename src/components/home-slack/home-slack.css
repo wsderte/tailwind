@@ -1,13 +1,13 @@
 .home-slack-back {
   padding-top: 10vh;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  justify-content:center;
   margin-top: 9%;
   margin-left: 10%;
   margin-right: 10%;
   background: linear-gradient(rgb(62, 84, 163) 0%, rgb(62, 84, 163) 20rem);
   height: 550px;
   border-radius: 20px 20px 20px 20px;
+  min-width: 370px;
 }
 
 .home-slack-logo {
@@ -78,4 +78,42 @@
 .home-slack-button:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 0.5rem;
   transform: scale(1.15);
+}
+
+@media (max-width: 1360px) {
+  .home-slack-logo {
+    font-size: 44px;
+    padding-bottom: 7vh;
+  }
+  .home-slack-header {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 7vh;
+  }
+  .home-slack-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 7vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-slack-back {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-slack-back {
+    height: 400px;
+  }
+}
+
+@media (max-width: 606px) {
+  .home-slack-back {
+    margin-top: 9%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 370px;
+  }
 }

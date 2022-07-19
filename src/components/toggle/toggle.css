@@ -39,3 +39,12 @@
     transform: translate3d(25%, 0, 0);
     background: #abe3ae;
   }
+
+  
+@media (max-width: 768px){
+  .toggle {
+    height: 23px;
+    width: 46px;
+  }
+  
+}

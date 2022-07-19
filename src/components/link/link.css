@@ -24,3 +24,7 @@
 .link-name:hover::after {
   transform: scaleX(0);
 }
+
+.block-links-wrap{
+  min-width: 100px;
+}

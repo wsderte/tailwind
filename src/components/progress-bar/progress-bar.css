@@ -14,13 +14,28 @@
     border-radius: 90px;
     height: 100%;
 }
+
 .progress-bar-circle{
     position: absolute;
-    top: -1.8rem;
+    top: -1.5rem;
     left: 95%;
     width: fit-content;
     background: black;
     color: white;
     padding: 1.5rem;
     border-radius: 90px;
+}
+
+@media (max-width: 768px){
+    .progress-bar-container{
+        height: 15px;
+    }
+    .progress-bar-circle{
+        top: -1.2rem;
+        width: fit-content;
+        background: black;
+        color: white;
+        padding: 1.1rem;
+        border-radius: 90px;
+    }
 }

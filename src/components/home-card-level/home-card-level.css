@@ -12,3 +12,23 @@
   letter-spacing: 1px;
   padding-left: 2px;
 }
+
+@media (max-width: 1800px) {
+  .home-card-down-num {
+    width: 8%;
+  }
+  .home-card-down-grade {
+    font-size: 17px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .home-card-down-num {
+    width: 8%;
+  }
+  .home-card-down-grade {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}

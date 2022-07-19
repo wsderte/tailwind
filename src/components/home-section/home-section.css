@@ -5,5 +5,13 @@
   flex-direction: raw;
   padding: 1vh;
 
-  padding-left: 15%;
+  /* padding-left: 15%; */
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:1520px){
+  .sections-wrap {
+    justify-content: space-evenly;
+  }
 }

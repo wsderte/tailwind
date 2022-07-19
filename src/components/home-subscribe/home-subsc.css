@@ -1,6 +1,7 @@
 .home-subsc-wrap {
-  margin-left: 10%;
-  margin-right: 10%;
+  height: fit-content;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
   padding-top: 10vh;
 }
 
@@ -8,10 +9,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 3vh;
 }
 
 .home-subsc-left {
-  height: 301px;
+  height: fit-content;
   width: 50%;
   padding-left: 10%;
 }
@@ -25,7 +27,7 @@
 }
 
 .home-subsc-text {
-  font-weight: 900px;
+  font-weight: 700;
   font-size: 32px;
 }
 
@@ -56,6 +58,8 @@
   flex-direction: raw;
   padding: 1vh;
   padding-top: 20px;
+  min-width: 400px;
+  margin-bottom: 2vh;
 }
 
 .home-subsc-email-box-input {
@@ -93,4 +97,39 @@
 .home-subsc-email-button:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 0.5rem;
   transform: scale(1.15);
+}
+
+@media (max-width: 1400px) {
+  .home-subsc-email-box-input {
+    font-size: 18px;
+    width: 400px;
+  }
+  .home-subsc-text {
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .home-subsc-email-box-input {
+    font-size: 15px;
+    width: 300px;
+  }
+  .home-subsc-right img {
+      width: 70%;
+  }
+  .home-subsc-email-button {
+    font-size: 15px;
+    letter-spacing: 1;
+    line-height: 1;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-subsc-email-box-input {
+    font-size: 13px;
+    width: 250px;
+  }
 }
